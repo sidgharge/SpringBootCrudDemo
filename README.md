@@ -2,6 +2,7 @@
 
 For detailed information, please read [Actuator docs](https://docs.spring.io/spring-boot/docs/current/actuator-api/html/).
 
+SpringDeveloper's [video link](https://youtu.be/otcYECeFS6Y).
 
 ## Getting started
 
