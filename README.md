@@ -177,3 +177,46 @@ To retrieve the mappings, make a GET request to /actuator/mappings
 ```
 $ curl 'http://localhost:33632/actuator/mappings' -i -X GET
 ```
+
+### Metrics
+The metrics endpoint provides access to application metrics.
+
+To retrieve the names of the available metrics, make a GET request to /actuator/metrics
+
+```
+$ curl 'http://localhost:8080/actuator/metrics' -i -X GET
+```
+
+To retrieve a metric, make a GET request to /actuator/metrics/{metric.name}
+For example, to retrieve total number of requests to tomcat, use:
+
+```
+http://localhost:8080/actuator/metrics/tomcat.global.request
+```
+
+### Scheduled Tasks
+The scheduledtasks endpoint provides information about the application’s scheduled tasks.
+
+To retrieve the scheduled tasks, make a GET request to /actuator/scheduledtasks
+
+```
+$ curl 'http://localhost:8080/actuator/scheduledtasks' -i -X GET
+```
+
+### Shutdown
+The shutdown endpoint is used to shut down the application.
+
+To shut down the application, make a POST request to /actuator/shutdown
+
+```
+$ curl 'http://localhost:8080/actuator/shutdown' -i -X POST
+```
+
+### Thread Dump
+The threaddump endpoint provides a thread dump from the application’s JVM.
+
+To retrieve the thread dump, make a GET request to /actuator/threaddump
+
+```
+$ curl 'http://localhost:8080/actuator/threaddump' -i -X GET
+```
